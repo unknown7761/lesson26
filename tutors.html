@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <title>Tutors</title>
+</head>
+<body>
+<div class="container">
+
+    <button class="btn btn-success " id="addTutor">Kuratr qo'shish</button>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Fullname</th>
+            <th scope="col">Username</th>
+            <th scope="col">Address</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody class="tutors">
+
+
+        </tbody>
+    </table>
+</div>
+
+
+<!--Add tutor modal-->
+
+
+<!-- Modal -->
+<div class="modal fade" id="addTutorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="tutorForm">
+                    <div class="form-group">
+                        <label for="fullname">Fullname</label>
+                        <input type="text" class="form-control" id="fullname"  placeholder="fullname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">username</label>
+                        <input type="text" class="form-control" id="username"  placeholder="username">
+                    </div>
+
+                    <div class="form-group password-label" >
+                        <label for="password">password</label>
+                        <input type="password" class="form-control" id="password"  placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">address</label>
+                        <input type="text" class="form-control" id="address"  placeholder="address">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveTutor">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tutor.js"></script>
+</body>
+</html>

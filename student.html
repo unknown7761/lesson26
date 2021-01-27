@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="stylesheet" href="css/student.css">
+    <title>Students</title>
+</head>
+<body>
+
+<div class="container">
+
+    <button class="btn btn-success" id="showModal">Yangi talaba yaratish</button>
+    <table class="w-100" id="studentTable">
+
+    </table>
+
+</div>
+
+
+
+
+
+
+
+<!-- Add student modal -->
+<div class="modal fade" id="studentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Student yaratish</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="studentForm">
+                    <div class="form-group">
+                        <label for="fullname">F.I.SH</label>
+                        <input type="text" class="form-control" id="fullname" placeholder="F.I.SH">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Manzil</label>
+                        <input type="text" class="form-control" id="address" placeholder="address">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Bekor qilish</button>
+                <button type="button" class="btn btn-primary" id="addStudentBtn">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/student.js"></script>
+</body>
+</html>
